@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "photobooth_galleries",
+  "info": {
+    "singularName": "photobooth-gallery",
+    "pluralName": "photobooth-galleries",
+    "displayName": "Photobooth Gallery",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "gallery_name": {
+      "type": "string"
+    },
+    "gallery_date": {
+      "type": "date"
+    },
+    "gallery_path": {
+      "type": "string"
+    },
+    "gallery_banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

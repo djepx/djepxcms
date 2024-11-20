@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "edwins",
+  "info": {
+    "singularName": "edwin",
+    "pluralName": "edwins",
+    "displayName": "Edwin"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "biography": {
+      "type": "text"
+    },
+    "headshot": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

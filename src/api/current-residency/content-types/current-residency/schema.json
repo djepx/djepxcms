@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "current_residencies",
+  "info": {
+    "singularName": "current-residency",
+    "pluralName": "current-residencies",
+    "displayName": "Current Residencies"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "background_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "location": {
+      "type": "string"
+    },
+    "next_appearances": {
+      "type": "string"
+    }
+  }
+}

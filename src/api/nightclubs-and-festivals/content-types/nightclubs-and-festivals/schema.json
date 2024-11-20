@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "nightclubs_and_festival",
+  "info": {
+    "singularName": "nightclubs-and-festivals",
+    "pluralName": "nightclubs-and-festival",
+    "displayName": "Nightclubs & Festivals",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section_title": {
+      "type": "string"
+    },
+    "section_description": {
+      "type": "text"
+    },
+    "career_highlights": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}
