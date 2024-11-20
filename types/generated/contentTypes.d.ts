@@ -402,6 +402,7 @@ export interface ApiAudioAndLightingAudioAndLighting
   extends Struct.SingleTypeSchema {
   collectionName: 'audio_and_lightings';
   info: {
+    description: '';
     displayName: 'Audio & Lighting';
     pluralName: 'audio-and-lightings';
     singularName: 'audio-and-lighting';
@@ -422,10 +423,9 @@ export interface ApiAudioAndLightingAudioAndLighting
     publishedAt: Schema.Attribute.DateTime;
     section_description: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
+        'plugin::ckeditor5.CKEditor',
         {
-          output: 'HTML';
-          preset: 'standard';
+          preset: 'default';
         }
       >;
     section_title: Schema.Attribute.String;
@@ -453,10 +453,9 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     description: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
+        'plugin::ckeditor5.CKEditor',
         {
-          output: 'HTML';
-          preset: 'standard';
+          preset: 'default';
         }
       >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -645,10 +644,9 @@ export interface ApiNightclubsAndFestivalsNightclubsAndFestivals
   attributes: {
     career_highlights: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
+        'plugin::ckeditor5.CKEditor',
         {
-          output: 'HTML';
-          preset: 'standard';
+          preset: 'default';
         }
       >;
     createdAt: Schema.Attribute.DateTime;
@@ -711,6 +709,7 @@ export interface ApiPhotoboothGalleryPhotoboothGallery
 export interface ApiPhotoboothPhotobooth extends Struct.SingleTypeSchema {
   collectionName: 'photobooths';
   info: {
+    description: '';
     displayName: 'Photobooth';
     pluralName: 'photobooths';
     singularName: 'photobooth';
@@ -731,10 +730,9 @@ export interface ApiPhotoboothPhotobooth extends Struct.SingleTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     section_description: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
+        'plugin::ckeditor5.CKEditor',
         {
-          output: 'HTML';
-          preset: 'standard';
+          preset: 'default';
         }
       >;
     section_title: Schema.Attribute.String;
@@ -808,6 +806,7 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
 export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
   collectionName: 'testimonials';
   info: {
+    description: '';
     displayName: 'Testimonials';
     pluralName: 'testimonials';
     singularName: 'testimonial';
@@ -821,10 +820,9 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     details: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
+        'plugin::ckeditor5.CKEditor',
         {
-          output: 'HTML';
-          preset: 'standard';
+          preset: 'default';
         }
       >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;

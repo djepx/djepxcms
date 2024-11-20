@@ -21,10 +21,9 @@
     "career_highlights": {
       "type": "customField",
       "options": {
-        "output": "HTML",
-        "preset": "standard"
+        "preset": "default"
       },
-      "customField": "plugin::ckeditor.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "audio-and-lighting",
     "pluralName": "audio-and-lightings",
-    "displayName": "Audio & Lighting"
+    "displayName": "Audio & Lighting",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,10 +18,9 @@
     "section_description": {
       "type": "customField",
       "options": {
-        "output": "HTML",
-        "preset": "standard"
+        "preset": "default"
       },
-      "customField": "plugin::ckeditor.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }

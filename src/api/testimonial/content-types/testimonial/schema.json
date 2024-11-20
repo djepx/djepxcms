@@ -4,7 +4,8 @@
   "info": {
     "singularName": "testimonial",
     "pluralName": "testimonials",
-    "displayName": "Testimonials"
+    "displayName": "Testimonials",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,10 +18,9 @@
     "details": {
       "type": "customField",
       "options": {
-        "output": "HTML",
-        "preset": "standard"
+        "preset": "default"
       },
-      "customField": "plugin::ckeditor.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor"
     }
   }
 }
