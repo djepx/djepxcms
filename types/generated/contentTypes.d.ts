@@ -423,9 +423,10 @@ export interface ApiAudioAndLightingAudioAndLighting
     publishedAt: Schema.Attribute.DateTime;
     section_description: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor5.CKEditor',
+        'plugin::ckeditor.CKEditor',
         {
-          preset: 'default';
+          output: 'HTML';
+          preset: 'standard';
         }
       >;
     section_title: Schema.Attribute.String;
@@ -453,9 +454,10 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     description: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor5.CKEditor',
+        'plugin::ckeditor.CKEditor',
         {
-          preset: 'default';
+          output: 'HTML';
+          preset: 'standard';
         }
       >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -644,9 +646,10 @@ export interface ApiNightclubsAndFestivalsNightclubsAndFestivals
   attributes: {
     career_highlights: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor5.CKEditor',
+        'plugin::ckeditor.CKEditor',
         {
-          preset: 'default';
+          output: 'HTML';
+          preset: 'standard';
         }
       >;
     createdAt: Schema.Attribute.DateTime;
@@ -730,9 +733,10 @@ export interface ApiPhotoboothPhotobooth extends Struct.SingleTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     section_description: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor5.CKEditor',
+        'plugin::ckeditor.CKEditor',
         {
-          preset: 'default';
+          output: 'HTML';
+          preset: 'standard';
         }
       >;
     section_title: Schema.Attribute.String;
@@ -820,9 +824,10 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     details: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
-        'plugin::ckeditor5.CKEditor',
+        'plugin::ckeditor.CKEditor',
         {
-          preset: 'default';
+          output: 'HTML';
+          preset: 'standard';
         }
       >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;

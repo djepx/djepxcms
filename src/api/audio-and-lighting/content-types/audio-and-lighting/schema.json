@@ -18,9 +18,10 @@
     "section_description": {
       "type": "customField",
       "options": {
-        "preset": "default"
+        "output": "HTML",
+        "preset": "standard"
       },
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }
