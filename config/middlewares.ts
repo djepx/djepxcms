@@ -14,7 +14,7 @@ export default [
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'script-src': ['https://cdn.ckeditor.com', 'https://hopeful-appliance-aaccff2f17.strapiapp.com']
+          'script-src': ['https://cdn.ckeditor.com', 'https://hopeful-appliance-aaccff2f17.strapiapp.com', 'admin.djepx.com']
         },
       },
     },
